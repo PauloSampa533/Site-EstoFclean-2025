@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EstoFclean — Higienização Profissional de Estofados</title>
+  <meta name="description" content="Higienização profissional de estofados para residências, pousadas e hotéis em Pomerode e região. Saúde, conforto e conservação.">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--brand:#0b6b6b;--accent:#0ea5a4;--muted:#6c757d}
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;}
+    .hero{background:linear-gradient(180deg, rgba(11,107,107,0.06), rgba(226, 228, 228, 0.03));}
+    .badge-soft{background:rgba(11,107,107,0.08);color:var(--brand);padding:.35rem .6rem;border-radius:.5rem;font-weight:600}
+    .card-ghost{border:1px solid rgba(0,0,0,0.06);box-shadow:0 6px 18px rgba(11,107,107,0.04)}
+    .feature-icon{width:56px;height:56px;border-radius:12px;background:#f3faf9;display:grid;place-items:center;color:var(--brand);font-weight:700}
+    footer{background:#153655;color:white}
+    .whatsapp-float{position:fixed;right:24px;bottom:24px;z-index:1050}
+    .pill{border-radius:999px;padding:.65rem 1rem}
+    @media(min-width:768px){.hero{padding-top:5rem;padding-bottom:4rem}} 
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="/image/Logo EstoFclean Recriada.jpg" alt="EstoFclean" width="48" height="48" class="rounded-circle">
+      <div>
+        <div style="font-weight:700">EstoFclean</div>
+        <small class="text-muted">Higienização profissional</small>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="#como-trabalhamos">Como Trabalhamos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#time">Equipe</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        <li class="nav-item ms-2"><a class="btn btn-outline-success" href="#contato">Agende</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <span class="badge-soft">Exclusivo • Alto Padrão</span>
+        <h1 class="mt-3" style="font-weight:700">Higienização de estofados que protege a saúde e valoriza seus ambientes</h1>
+        <p class="lead text-muted">Atendemos pousadas, hotéis e residências em Pomerode e região com técnicas profissionais, equipamentos de ponta e protocolos seguros para tecidos nobres.</p>
+
+        <div class="d-flex gap-2 mt-4">
+          <a href="#contato" class="btn btn-success btn-lg me-2">Agendar Visita Técnica</a>
+          <button class="btn btn-outline-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#videoModal">Ver Apresentação</button>
+        </div>
+
+        <div class="mt-4">
+          <small class="text-muted">Serviços para: </small>
+          <div class="d-flex gap-2 mt-2">
+            <span class="pill bg-light">Pousadas</span>
+            <span class="pill bg-light">Hotéis</span>
+            <span class="pill bg-light">Restaurantes</span>
+            <span class="pill bg-light">Residências</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <div class="card card-ghost p-3">
+        <video autoplay muted loop playsinline class="img-fluid">
+            <source src="/image/WhatsApp Video 2025-07-02 at 11.57.33.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+          <div class="p-3">
+            <h5 style="font-weight:700">Resultado que se percebe</h5>
+            <p class="mb-0 text-muted">Imagens reais, técnica especializada e garantia de conservação.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO MODAL -->
+<div class="modal fade" id="videoModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-0" style="background:#000">
+        <div class="ratio ratio-16x9">
+          <!-- Substitua o src abaixo pelo link do seu vídeo no YouTube ou hospedagem -->
+          <iframe id="presentationVideo" src="https://www.youtube.com/embed/VIDEO_ID?rel=0" title="Apresentação EstoFclean" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="servicos" class="py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 style="font-weight:700">Nossos Serviços</h2>
+      <p class="text-muted">Soluções técnicas pensadas para conservar e proteger estofados de alto padrão.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 p-3">
+          <div class="d-flex gap-3 align-items-start">
+            <div class="feature-icon">SF</div>
+            <div>
+              <h5 style="font-weight:700">Higienização de Sofás</h5>
+              <p class="mb-0 text-muted">Tratamento técnico para tecidos nobres, com extração profunda e proteção antiácaro.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 p-3">
+          <div class="d-flex gap-3 align-items-start">
+            <div class="feature-icon">CH</div>
+            <div>
+              <h5 style="font-weight:700">Higienização de Colchões</h5>
+              <p class="mb-0 text-muted">Remoção de ácaros, odores e manchas, garantindo ambiente saudável para hóspedes e moradores.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 p-3">
+          <div class="d-flex gap-3 align-items-start">
+            <div class="feature-icon">CD</div>
+            <div>
+              <h5 style="font-weight:700">Cadeiras de Alto Padrão</h5>
+              <p class="mb-0 text-muted">Preservação e limpeza especializada para cadeiras de design, couro e tecidos delicados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 p-3">
+          <div class="d-flex gap-3 align-items-start">
+            <div class="feature-icon">PP</div>
+            <div>
+              <h5 style="font-weight:700">Planos para Pousadas</h5>
+              <p class="mb-0 text-muted">Planos de manutenção periódica para preservação estética e sanitária de acomodações.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 p-3">
+          <div class="d-flex gap-3 align-items-start">
+            <div class="feature-icon">AT</div>
+            <div>
+              <h5 style="font-weight:700">Atendimento Corporativo</h5>
+              <p class="mb-0 text-muted">Serviços para restaurantes, lobbies e áreas comuns com agendamento e logística profissional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 p-3">
+          <div class="d-flex gap-3 align-items-start">
+            <div class="feature-icon">TR</div>
+            <div>
+              <h5 style="font-weight:700">Tratamentos Especiais</h5>
+              <p class="mb-0 text-muted">Impermeabilização, neutralização de odores e restauração têxtil.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section id="como-trabalhamos" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h3 style="font-weight:700">Como trabalhamos</h3>
+        <ul class="list-unstyled mt-3">
+          <li class="mb-3"><strong>1. Visita técnica</strong> — Avaliação precisa com checklist e demonstração com microscópio portátil.</li>
+          <li class="mb-3"><strong>2. Orçamento detalhado</strong> — Transparência total com planos e opções.</li>
+          <li class="mb-3"><strong>3. Execução especializada</strong> — Equipe treinada, equipamentos profissionais e produtos certificados.</li>
+          <li class="mb-3"><strong>4. Entrega e garantia</strong> — Verificação final e recomendações para conservação.</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <div class="card p-3 card-ghost">
+          <h5 style="font-weight:700">Checklist rápido</h5>
+          <p class="text-muted mb-1">• Condição do tecido</p>
+          <p class="text-muted mb-1">• Presença de odores ou mofo</p>
+          <p class="text-muted mb-1">• Sinais de ácaros e sujeira profunda</p>
+          <p class="text-muted mb-1">• Registro fotográfico e recomendações</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="time" class="py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 style="font-weight:700">Equipe EstoFclean</h2>
+      <p class="text-muted">Profissionais treinados para atender ambientes de alto padrão com técnica, discrição e responsabilidade.</p>
+    </div>
+
+    <div class="row g-3 justify-content-center">
+      <div class="col-6 col-md-3">
+        <div class="card text-center p-3">
+          <img src="/image/foto-paulo-praia.jpeg" class="rounded-circle mx-auto d-block" alt="tecnico" style="width:96px;height:96px;object-fit:cover">
+          <h6 class="mt-3 mb-0">Paulo R.</h6>
+          <small class="text-muted">Fundador & Técnico</small>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card text-center p-3">
+          <img src="https://via.placeholder.com/140" class="rounded-circle mx-auto d-block" alt="tecnico" style="width:96px;height:96px;object-fit:cover">
+          <h6 class="mt-3 mb-0">Bruna Conte</h6>
+          <small class="text-muted">Financeiro</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h3 style="font-weight:700">Clientes que confiam</h3>
+      <p class="text-muted">Depoimentos reais de pousadas e clientes residenciais.</p>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card p-3">
+          <p class="mb-1">“Profissionalismo impecável. Nossos hóspedes comentaram na recepção!”</p>
+          <small class="text-muted">— Pousada Vale Encanto</small>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <p class="mb-1">“O cuidado com os tecidos nobres foi surpreendente. Recomendo.”</p>
+          <small class="text-muted">— Hotel Blumenau</small>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <p class="mb-1">“Atendimento pontual e resultado além do esperado.”</p>
+          <small class="text-muted">— Cliente Residencial</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA + CONTACT -->
+<section id="contato" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h3 style="font-weight:700">Agende sua visita técnica</h3>
+        <p class="text-muted">Preenchendo o formulário ou clicando no WhatsApp você garante prioridade na agenda.</p>
+
+        <form id="leadForm" class="row g-2 needs-validation" novalidate>
+          <div class="col-12">
+            <label class="form-label">Nome completo</label>
+            <input type="text" class="form-control" id="nome" required>
+            <div class="invalid-feedback">Por favor, informe seu nome.</div>
+          </div>
+          <div class="col-12">
+            <label class="form-label">Estabelecimento / Empresa (se houver)</label>
+            <input type="text" class="form-control" id="empresa">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Telefone/WhatsApp</label>
+            <input type="tel" class="form-control" id="telefone" required>
+            <div class="invalid-feedback">Por favor, informe um telefone.</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Cidade</label>
+            <input type="text" class="form-control" id="cidade" value="Pomerode" required>
+            <div class="invalid-feedback">Por favor, informe a cidade.</div>
+          </div>
+          <div class="col-12">
+            <label class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="3">Gostaria de agendar visita técnica para avaliação dos estofados.</textarea>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-success" id="submitBtn" type="submit">Enviar e Agendar</button>
+            <a class="btn btn-outline-secondary ms-2" href="https://wa.me/55SEUNUMERODDD?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+visita+t%C3%A9cnica+com+a+EstoFclean">Ou falar pelo WhatsApp</a>
+          </div>
+        </form>
+
+      </div>
+      <div class="col-lg-6">
+        <div class="card p-3">
+          <h5 style="font-weight:700">Informações úteis</h5>
+          <p class="mb-1 text-muted">Atendimento: Pomerode, Blumenau, Timbó, Indaial, Jaraguá do Sul, Rio dos Cedros, Massaranduba</p>
+          <p class="mb-0 text-muted">Trabalhamos com equipamentos profissionais, produtos hipoalergênicos e protocolos que protegem o tecido e a saúde.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-4">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>
+      <strong>EstoFclean</strong> • Higienização de Estofados
+      <div class="">Pomerode - SC • (insira seu contato)</div>
+    </div>
+    <div>
+      <small>© EstoFclean — Todos os direitos reservados</small>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp-float" href="https://wa.me/55479992625195?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+visita+t%C3%A9cnica" target="_blank">
+  <button class="btn btn-success rounded-circle p-3 shadow-lg" title="Falar no WhatsApp">
+    <svg xmlns="https://api.whatsapp.com/send?phone=5547992625195&text=%F0%9F%AA%91%20Quero%20higienizar%20minha%20poltrona%20e%20deix%C3%A1-la%20como%20nova!%20Quero%20meu%20or%C3%A7amento%20%F0%9F%93%8B" width="28" height="28" fill="white" class="bi bi-whatsapp" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.95 7.95 0 0 0 8.05.5C3.833.5.5 3.833.5 8.05c0 1.417.372 2.73 1.077 3.917L.5 15.5l3.75-1.003A7.496 7.496 0 0 0 8.05 15.5c4.217 0 7.55-3.333 7.55-7.55 0-1.95-.696-3.75-1.999-5.624z"/>
+    </svg>
+  </button>
+</a>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Video modal: stop playback on close
+  const videoModal = document.getElementById('videoModal')
+  videoModal.addEventListener('hide.bs.modal', () => {
+    const iframe = document.getElementById('presentationVideo')
+    const src = iframe.src
+    iframe.src = ''
+    iframe.src = src
+  })
+
+  // Form validation + simple fake submit (substitua por integração real)
+  (function () {
+    'use strict'
+    const form = document.getElementById('leadForm')
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault(); event.stopPropagation();
+        form.classList.add('was-validated')
+        return
+      }
+      event.preventDefault()
+      // Simular envio e redirecionar para WhatsApp com mensagem pronta
+      const nome = document.getElementById('nome').value
+      const tel = document.getElementById('telefone').value
+      const cidade = document.getElementById('cidade').value
+      const msg = encodeURIComponent(`Olá, sou ${nome} de ${cidade}. Gostaria de agendar uma visita técnica.`)
+      window.open(`https://wa.me/55479992625195?text=${msg}`, '_blank')
+    }, false)
+  })()
+</script>
+</body>
+</html>
